@@ -514,32 +514,25 @@
     <!-- Main container for the content -->
 <div class="w-[920px] min-h-[1080px] bg-black shadow-lg rounded-lg p-6 text-white">
   
-  <!-- Centered content section -->
   <div class="text-center">
-    
-    <!-- Video iframe -->
-    <div class="video-container relative w-full h-[720px] mb-6">
-    <!-- Custom Thumbnail -->
-      
-    <img 
-        src="https://i.ibb.co/PGrcrZv/Are-you-not-Entertained.png" 
-        alt="Custom Thumbnail" 
-        class="thumbnail w-full h-full object-cover cursor-pointer absolute inset-0 z-10">
 
-    <!-- Google Drive Video Embed (Initially Hidden) -->
+    <!-- Custom Thumbnail -->
+    <iframe 
+        src="https://i.ibb.co/PGrcrZv/Are-you-not-Entertained.png" 
+        class="w-full h-[720px] mb-6" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+
+    <!-- Video iframe -->
     <iframe 
         src="https://drive.google.com/file/d/16nATGH5otDhiMyjBw2aZDh3UEqPPpI3Z/preview" 
+        class="w-full h-[720px] mb-6" 
         frameborder="0" 
-        allowfullscreen 
-        class="w-full h-full hidden"></iframe>
-</div>
-<script>
-    // JavaScript to toggle thumbnail and video
-    document.querySelector('.thumbnail').addEventListener('click', function() {
-        this.style.display = 'none'; // Hide the thumbnail
-        document.querySelector('iframe').classList.remove('hidden'); // Show the video
-    });
-</script>
+        allowfullscreen>
+    </iframe>
+
+  </div>
     
     <!-- Description text -->
     <p class="mb-6">
