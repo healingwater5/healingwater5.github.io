@@ -533,7 +533,13 @@
         allowfullscreen 
         class="w-full h-full hidden"></iframe>
 </div>
-
+<script>
+    // JavaScript to toggle thumbnail and video
+    document.querySelector('.thumbnail').addEventListener('click', function() {
+        this.style.display = 'none'; // Hide the thumbnail
+        document.querySelector('iframe').classList.remove('hidden'); // Show the video
+    });
+</script>
     
     <!-- Description text -->
     <p class="mb-6">
