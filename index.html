@@ -518,10 +518,21 @@
   <div class="text-center">
     
     <!-- Video iframe -->
-    <iframe class="w-full h-[720px] mb-6" 
+    <div class="video-container relative w-full h-[720px] mb-6">
+    <!-- Custom Thumbnail -->
+      
+    <img 
+        src="https://i.ibb.co/PGrcrZv/Are-you-not-Entertained.png" 
+        alt="Custom Thumbnail" 
+        class="thumbnail w-full h-full object-cover cursor-pointer absolute inset-0 z-10">
+
+    <!-- Google Drive Video Embed (Initially Hidden) -->
+    <iframe 
         src="https://drive.google.com/file/d/16nATGH5otDhiMyjBw2aZDh3UEqPPpI3Z/preview" 
         frameborder="0" 
-        allowfullscreen></iframe>
+        allowfullscreen 
+        class="w-full h-full hidden"></iframe>
+</div>
 
     
     <!-- Description text -->
